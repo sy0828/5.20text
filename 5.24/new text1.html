@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		 *{
+		 	margin: 0;
+		 	padding: 0;
+		 }
+		 ul{
+		 	list-style: none;
+		 }
+		 a{
+		 	text-decoration: none;
+		 }
+		 .header{
+		 	position: relative;
+		 	width: 990px;
+		 	height: 80px;
+		 	background-color: pink;
+		 	margin: 0 auto;
+		 }
+		 .logo{
+		 	float: left;
+		 	width: 170px;
+		 	height: 80px;
+		 	background: url(img/logo.png) no-repeat center;
+		 }
+		 .welcome{
+		 	float: left;
+		 	font-size: 24px;
+		 	height: 100%;
+		 	line-height: 95px;
+		 	margin-left: 22px;
+		 }
+		 .ask{
+		 	position: absolute;
+		 	right: 0;
+		 	bottom: 10px;
+		 	font-size: 10px;
+		 	text-indent: 20px;
+		 	color: #333;
+		 	background: url(img/q-icon.png) no-repeat left center;
+		 }
+		 .header .ask:hover{
+		 	 text-decoration: underline;
+		 	 color: red;
+		 }
+		 .tips{
+		 	 height: 40px;
+		 	 text-align: center;
+		 	 line-height: 40px;
+		 	 font-size: 12px;
+		 	 background-color: #FFF8F0;
+		 }
+		 .title{
+		 	display: inline-block;
+             height: 100%;
+             margin:0 auto;
+             text-indent: 20px;
+             background: url(img/icon-tips.png) no-repeat left center;
+		 }
+		 .main{
+		 	 height: 475px;
+		 	 background-color: #DE9C3C;
+		 }
+		 .main-c{
+		 	position: relative;
+		 	width: 990px;
+		 	height:100%;
+		 	margin: 0 auto;
+		 	background: url(img/bg.jpg) no-repeat center;
+		 }
+		 .main-b{
+		 	position: absolute;
+		 	right: 0;
+		 	bottom: 0;
+		 	width: 347px;
+		 	height: 400px;
+		 	background-color: #fff;
+		 }
+		 .main-d{
+		 	height: 52px;
+		 	border-bottom: 1px solid #f0f0f0;
+		 }
+		 .tab{
+		 	float: left;
+		 	width: 173px;
+            height: 20px;
+            /*line-height: 20px;*/
+            font-size: 20px;
+            text-align: center;
+            margin: 16px 0;
+		 }
+		 .main-d1{
+		 	 border-right: 1px solid #f0f0f0
+		 }
+		 .main .main-d:hover{
+		 	color: #E21C19;
+		 }
+		 .main-d2{
+		 	color: #E21C19;
+		 }
+		 .loginbar{
+		 	width: 306px;
+		 	height: 36px;
+		 	border: 1px solid #f0f0f0;
+		 	margin: 0 auto;
+		 	margin-top: 34px;
+		 }
+		 .main-c .form .loginbar.password{
+		 	margin-top: 22px;
+		 }
+		 .form .loginbar .icon{
+		 	float: left;
+		 	width: 36px;
+		 	height: 36px;
+		 }
+		 .form .loginbar .icon.user-icon{
+		 	background: url(img/pwd-icons-new.png) no-repeat;
+		 }
+		 .form .loginbar .icon.password-icon{
+		 	background: url(img/pwd-icons-new.png) no-repeat;
+		 	background-position: -48px 0;
+		 }
+         .form .loginbar input{
+			float: left;
+			width: 270px;
+			height: 36px;
+			border: none;
+			/*聚焦的时候*/
+			outline: none;
+			text-indent: 12px;
+		}
+
+	</style>
+</head>
+<body>
+	 	<div class="header">
+	 		 <a href="#" class="logo"></a>
+	 		 <div class="welcome">
+	 		 	欢迎登录
+	 		 </div>
+	 		 <a href="#" class="ask">
+	 		 	登录页面,调查问卷
+	 		 </a>
+	 	</div>
+	 	<div class="tips">
+	 		<div class="title">
+	 			依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版 《京东隐私政策》已上线，将更有利于保护您的个人隐私。
+	 		</div>
+	 	</div>
+	 	<div class="main">
+	 		<div class="main-c">
+	 			<div class="main-b">
+	 				<div class="tips">
+	 					<div class="title">
+              京东不会以任何理由要求您转账汇款，谨防诈骗。	 		 </div>
+	 				</div>
+	 				<!-- 选项卡 -->
+	 				 <div class="main-d">
+	 				 	<div class="tab main-d1">
+	 				 		扫码登录
+	 				 	</div>
+	 				 	<div class="tab main-d2">
+	 				 		账户登录
+	 				 	</div>
+	 				 	<div class="form">
+	 				 		<div class="loginbar username">
+	 				 			<span class="icon user-icon"></span>
+	 				 			<input type="password" placeholder="请输入邮箱">
+	 				 		</div>
+	 				 		<div class="loginbar password">
+	 				 			<span class="icon password-icon"></span>
+	 				 			<input type="password" placeholder="请输入密码">
+	 				 	</div>
+	 				 </div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 	<div class="footer"></div>
+</body>
+</html>

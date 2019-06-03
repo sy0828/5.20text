@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		 *{
+		 	margin: 0;
+		 	padding: 0;
+		 }
+		 ul{
+		 	list-style: none;
+		 }
+		 a{
+		 	text-decoration: none;
+		 }
+		 .title{
+		 	position: fixed;
+		 	right: 50px;
+            bottom: 100px;
+		 	width: 38px;
+		 	height: 119px;
+		 	background-color: pink;
+		 }
+		 .item{
+		 	position: relative;
+		 	width: 38px;
+		 	height: 38px;
+		 	cursor: pointer;
+		 }
+		 .qq{
+		 	width: 38px;
+		 	height: 38px;
+		    background: #6872BA url(img/qq.png) no-repeat center;
+		 }
+		 .wx{
+		 	width: 38px;
+		 	height: 38px;
+		 	background: #32AF2C url(img/wx.png) no-repeat center;
+		 	margin-top: 2.5px;			 
+		 }
+		 .top{
+		 	width: 38px;
+		 	height: 38px;
+		 	background: #646464 url(img/up.png) no-repeat center;
+		 	margin-top: 2.5px;
+		 }
+		 .wx-wx{
+		 	display: none;
+		 	position: absolute;
+		 	left: -119px;
+		 	top: 0;
+		 	width: 119px;
+		 	height: 119px;
+		 	background: url(img/qr.png) no-repeat center;
+		 }
+		 .title .wx:hover .wx-wx{
+		 	display: block;
+		 }
+		 .details{
+		 	display: none;
+		 	position: absolute;
+		 	right: 38px;
+		 	bottom: 0;
+		 	width: 170px;
+		 	height: 185px;
+		 	background-color: pink;
+		 }
+		 .title .qq:hover .details{
+		 	display: block;
+		 }
+		 .tip{
+		 	position: relative;
+		 	width: 100%;
+		 	height: 40px;
+		 	text-indent: 30px;
+		 	line-height: 40px;
+		 	background-color: #6872B9;
+		 }
+		 .details .close{
+		 	position: absolute;
+		 	top: 50%;
+		 	margin-top: -8px;
+		 	right: 10px;
+		 	height: 16px;
+		 	width: 16px;
+		 	background: url(img/X.png) no-repeat center; 
+		 }
+		 .teacher{
+		 	width: 100%;
+		 	height: 35px;
+		 	text-indent: 60px;
+		 	line-height: 40px;
+		 	background: #E8E8E8 url(img/tel.png) no-repeat 30px center; 
+		 }
+		 .details .teacher:hover{
+		 	background: black url(img/qq.png) no-repeat 30px center;
+		 	color: white;
+		 	height: 40px;
+		 	line-height: 40px;
+		 }
+		 .tel{
+		 	width: 100%
+		 	height: 75px;
+		 }
+		 .phone{
+		 	width: 100%;
+            height: 35px;
+            line-height: 35px;
+            text-indent: 60px;
+            background:  url(img/tel.png) no-repeat 30px center
+		 }
+		 .num{
+		 	height: 40px;
+		 	text-indent: 30px;
+		 }
+	</style>
+</head>
+<body>
+	<div class="title">
+		<div class="item qq">
+			<ul class="details">
+				<li class="tip">在线咨询
+				<span class="close"></span>
+			</li>
+				<li class="teacher">王老师</li>
+				<li class="teacher">张老师</li>
+				<li class="tel">
+					<div class="phone">
+						联系电话
+						
+					</div>
+					<div class="num">
+						0371-666666
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="item wx">
+			<div class="wx-wx">
+
+			</div>
+		</div>
+		<div class="item top"></div>
+	</div>
+</body>
+</html>
