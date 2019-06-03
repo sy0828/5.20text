@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 同时对div和p 标签设置相同样式 -->
+	<!-- 并集选择器 同时选中p div -->
+<style>
+	.test,.box{
+		    color: red;
+		   font-size: 30px;
+	}
+	/*交集选择器*/
+	/*既有test类名又具有danger类名 元素*/
+	.test.danger{
+		color: blue;
+	}
+	/*后代选择器 选中box里面的inner-box*/
+    .box
+    .inner-box{
+    	color: yellow;
+    	font-size:30px;
+    }
+    *{
+    	color: green;
+    	font-size:40px;
+    }
+  </style>
+</head>
+<body>
+	<p >不凡学院</p>
+	<div>不凡学院</div>
+	<p class="test danger">补番</p>
+	<p class="test">部分</p>
+	<div class="test">不凡</div>
+	<p class="box">我是一个box</p>
+	<div class="box">
+		我是一个盒子
+		<div class="inner-box">
+			我在内部
+		</div>
+	</div>
+	<div class="inner-box">我在外部</div>
+</body>
+</html>

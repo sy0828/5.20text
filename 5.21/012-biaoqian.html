@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+        #p1{
+        	color: yellow;
+        }
+        .text{
+        	color: orange;
+        }
+       	p{;
+       		color: blue
+       	}	
+       	/*说明行内样式权重(1000)>id选择器权重(100)>class选择器权重(10)>标签选择器权重(1)>*继承性											*/
+       	#p2{
+       		color: yellow;
+       	}
+        .p1.danger{
+        	color: red;
+        }
+   </style>
+</head>	
+<body>
+	<p style="color: red" id="p1" class="text">不凡学院</p>
+	<p id="p2" class="p1 danger">不凡学院</p>
+</body>
+</html>
